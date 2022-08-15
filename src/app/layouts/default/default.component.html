@@ -1,0 +1,21 @@
+<app-header (toggleSideBar)="sideBarToggler()">Header</app-header>
+
+
+<mat-drawer-container class="example-container">
+
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div >
+            <h2 >Item Timeline</h2>
+            <app-bars></app-bars>
+        </div>
+        
+    </mat-drawer-content>
+
+</mat-drawer-container>
+
+
+<app-footer></app-footer> 
